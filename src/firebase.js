@@ -20,5 +20,7 @@ const auth = firebase.auth();
 
 const provider = new firebase.auth.GithubAuthProvider();
 
-export { auth, provider };
+export { auth, provider }; //explicit
 export default db;
+
+//look up implicit and explicit exports?
