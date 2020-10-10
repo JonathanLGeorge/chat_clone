@@ -15,7 +15,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar__top">
-        <h3>woooooottttt getting thing done</h3>
+        <h3>wootwoot</h3>
         {/*Icons from material UI */}
         <ExpandMoreIcon />
       </div>

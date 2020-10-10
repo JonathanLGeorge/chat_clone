@@ -13,6 +13,18 @@ appId: "1:1031347355805:web:d12658d065713dfd371474",
 measurementId: "G-5YTM1TQJ66"
 };
 
+-develop
+--cloud firre store
+---create database
+----star test mode us west 2(L.A.)
+-Authentication
+--enable Google log in
+
+//how to get rid of 30days time limit
+-cloud fire store
+--local rules
+---delete the request time and the if, replace : after write with write;
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts

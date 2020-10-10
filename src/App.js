@@ -1,14 +1,16 @@
 import React from "react";
 import "./App.css";
+import Chat from "./components/Chat";
 import SideBar from "./components/Sidebar";
 
 function App() {
   return (
     //BEM convention used
-    <div className="App">
-      <h1>let start building :D</h1>
+    <div className="app">
       {/*Side bar*/}
       <SideBar />
+      {/*Chat */}
+      <Chat />
     </div>
   );
 }
