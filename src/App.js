@@ -8,12 +8,11 @@ import { selectUser } from "./features/userSlice";
 import { auth } from "./firebase";
 import { login, logout } from "./features/userSlice";
 function App() {
+  //this allows us to shoot our code into the data layer
+  const dispatch = useDispatch();
   //this is a redux hook
   //look at feature/userslice for more details
   const user = useSelector(selectUser);
-
-  //this allows us to shoot our code into the data layer
-  const dispatch = useDispatch();
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
@@ -51,4 +50,4 @@ function App() {
 
 export default App;
 
-//left off at 2:16
+//left off at 2:30
