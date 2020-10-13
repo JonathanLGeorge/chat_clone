@@ -25,6 +25,8 @@ measurementId: "G-5YTM1TQJ66"
 --local rules
 ---delete the request time and the if, replace : after write with write;
 
+study more redux
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
