@@ -24,7 +24,7 @@ function Chat() {
     if (channelId) {
       db.collection("channels")
         .doc(channelId)
-        .collectiion("messages")
+        .collection("messages")
         .orderBy("timestamp", "desc")
         .onSnapshot((snapshot) =>
           setMessages(snapshot.docs.map((doc) => doc.data()))
@@ -37,11 +37,11 @@ function Chat() {
     e.preventDefault();
 
     db.collection("channels").doc(channelId).collection("messages").add({
-      messges: input,
+      message: input,
       user: user,
       //we want to do it this way to get the time because it will convert the time
       //nomatter where you are
-      time: firebase.firestore.FieldValue.serverTimestamp(),
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
     //after we submit set the line to be empty again
     setInput("");
@@ -52,7 +52,7 @@ function Chat() {
       <div className="chat__messages">
         {messages.map((message) => (
           <Messages
-            time={message.time}
+            timestamp={message.timestamp}
             message={message.message}
             user={message.user}
           />
@@ -63,13 +63,11 @@ function Chat() {
         <form>
           <input
             value={input}
-            disabled={!channelId}
             onChange={(e) => setInput(e.target.value)}
             placeholder={`#${channelName}`}
           />
           <button
             className="chat__input-button"
-            disabled={!channelId}
             type="submit"
             onClick={sendingMessage}
           >
