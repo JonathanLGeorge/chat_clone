@@ -30,8 +30,8 @@ function Sidebar() {
           id: doc.id,
           channel: doc.data(),
         }))
-      );
-    });
+      )
+    );
   }, []);
   //when we press the plus icon
   const handleAddChannel = () => {
