@@ -2,6 +2,7 @@ import React from "react";
 import { auth, provider } from "../firebase";
 import { Button } from "@material-ui/core";
 import "../styles/Login.css";
+
 function Login() {
   const signIn = () => {
     //do google stuff
@@ -11,7 +12,7 @@ function Login() {
   return (
     <div className="login">
       <div className="login__logo">
-        <img src="" alt="" />
+        <img src={require("../img/servbots.JPG")} alt="bots" />
       </div>
       <Button onClick={signIn}>Sign In</Button>
     </div>

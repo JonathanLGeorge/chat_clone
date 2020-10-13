@@ -12,8 +12,10 @@ function App() {
   const dispatch = useDispatch();
   //this is a redux hook
   //look at feature/userslice for more details
+  //this will get our user info from redux into out App component
   const user = useSelector(selectUser);
 
+  //remember this runs once as soon as your app starts
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
       //console.log("user is ", authUser); if you look are the object it shows all the user info we can use
@@ -34,7 +36,6 @@ function App() {
     });
   }, [dispatch]); //this takes care of dependency warning
   return (
-    //BEM convention used
     <div className="app">
       {user ? (
         <>

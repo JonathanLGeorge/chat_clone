@@ -1,7 +1,7 @@
 .login {
   display: grid;
-  place-items: 300px;
-  background-color: #738adb;
+  place-items: center;
+  background-color: whitesmoke;
   font-weight: 800;
   width: 100%;
   height: 100vh;
@@ -9,14 +9,14 @@
 
 .login > button {
   width: 300px;
-  background-color: #738adb;
+  background-color: black;
   color: whitesmoke;
   font-weight: 800;
 }
 
 .login > button:hover {
-  background-color: black;
-  color: #738adb;
+  background-color: grey;
+  color: black;
 }
 
 .login > div > img {

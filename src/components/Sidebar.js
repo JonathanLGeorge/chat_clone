@@ -19,6 +19,7 @@ function Sidebar() {
   //this is how we are going to pull in our user info from data layer
   const user = useSelector(selectUser);
 
+  //adding those channels
   const [channels, setChannels] = useState([]);
   useEffect(() => {
     //in real time this will check for updates
@@ -63,11 +64,9 @@ function Sidebar() {
           {channels.map(({ id, channel }) => (
             <SidebarChannel key={id} channelName={channel.channelName} />
           ))}
-          <SidebarChannel />
-          <SidebarChannel />
-          <SidebarChannel />
         </div>
       </div>
+      {/*
       <div className="sidebar__voice">
         <SignalCellularAltIcon
           className="sidebar__voiceIcon"
@@ -82,6 +81,7 @@ function Sidebar() {
           <CallIcon />
         </div>
       </div>
+      */}
       <div className="sidebar__profile">
         {/*<Avatar src="https://avatars3.githubusercontent.com/u/32345015?s=460&amp;u=9420ddbb5f4905c861ed60fdf586dcaa7e7e88cf&amp;v=4" /> */}
         <Avatar onClick={() => auth.signOut()} src={user.photo} />

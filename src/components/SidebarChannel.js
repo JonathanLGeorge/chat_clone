@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { setChannelInfo } from "../features/appSlice";
 import "../styles/SidebarChannel.css";
+
 function SidebarChannel({ id, channelName }) {
   const dispatch = useDispatch();
 
@@ -11,7 +12,7 @@ function SidebarChannel({ id, channelName }) {
       onClick={() =>
         dispatch(
           setChannelInfo({
-            channelInfo: id,
+            channelId: id,
             channelName: channelName,
           })
         )
