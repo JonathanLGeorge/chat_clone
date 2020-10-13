@@ -63,11 +63,13 @@ function Chat() {
         <form>
           <input
             value={input}
+            disabled={!channelId}
             onChange={(e) => setInput(e.target.value)}
             placeholder={`#${channelName}`}
           />
           <button
             className="chat__input-button"
+            disabled={!channelId}
             type="submit"
             onClick={sendingMessage}
           >

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import "../styles/Sidebar.css";
 import SidebarChannel from "./SidebarChannel";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import CallIcon from "@material-ui/icons/Call";
+//import CallIcon from "@material-ui/icons/Call";
 import AddIcon from "@material-ui/icons/Add";
-import SignalCellularAltIcon from "@material-ui/icons/SignalCellularAlt";
-import InfoIcon from "@material-ui/icons/Info";
+//import SignalCellularAltIcon from "@material-ui/icons/SignalCellularAlt";
+//import InfoIcon from "@material-ui/icons/Info";
 import MicIcon from "@material-ui/icons/Mic";
 import HeadsetIcon from "@material-ui/icons/Headset";
 import SettingsIcon from "@material-ui/icons/Settings";
@@ -13,7 +13,7 @@ import { Avatar } from "@material-ui/core";
 import { useSelector } from "react-redux";
 import { selectUser } from "../features/userSlice";
 import db, { auth } from "../firebase";
-import { FiberDvrSharp } from "@material-ui/icons";
+//import { FiberDvrSharp } from "@material-ui/icons";
 
 function Sidebar() {
   //this is how we are going to pull in our user info from data layer
