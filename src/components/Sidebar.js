@@ -30,8 +30,8 @@ function Sidebar() {
           id: doc.id,
           channel: doc.data(),
         }))
-      )
-    );
+      );
+    });
   }, []);
   //when we press the plus icon
   const handleAddChannel = () => {
@@ -62,10 +62,10 @@ function Sidebar() {
         </div>
         <div className="sidebar__channel-list">
           {channels.map(({ id, channel }) => (
-            <SidebarChannel 
-              key={id} 
-              id={id} 
-              channelName={channel.channelName} 
+            <SidebarChannel
+              key={id}
+              id={id}
+              channelName={channel.channelName}
             />
           ))}
         </div>
